@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pinturas Pro | Azul & Carbón</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pinturas<span class="destaque">PRO</span></h1>
+        <nav>
+            <a href="#" id="inicio">Inicio</a>
+            <a href="#" id="catalogo">Catálogo</a>
+            <a href="#" id="contacto">Contacto</a>
+
+            <a href="carrito.html">
+            Carrito 🛒 (<span id="contador">0</span>)
+        </a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="tipos.jpg" alt="Paleta de Colores" class="img-paleta" width="600">
+            <h2>Acabados de Alta Gama</h2>
+            <p>Explora nuestra nueva línea de revestimientos con pigmentos ultra-claros.</p>
+            <button id="btnInfo">Ver Promoción</button>
+        </div>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <img src="celeste.jpg" alt="Celeste" class="img-paleta" width="300">
+            <h3>Celeste/pintura con acabado suave y duradero</h3>
+            <p>$75.000</p>
+            <button onclick="agregarProducto('Celeste',75.000)">
+            Agregar al carrito
+        </button>
+        </div>
+
+        <div class="card">
+            <img src="azuloscuro.jpg" alt="Azul Oscuro" class="img-paleta" width="300">
+            <h3>Azul Oscuro/pintura con un acbado sutil y elegante con secado rapido , perfecto para casas de invierno</h3>
+            <p>$85.000</p>
+            <button onclick="agregarProducto('Azul Oscuro',85.000)">
+            Agregar al carrito
+        </button>
+        </div>
+
+        <div class="card">
+            <img src="acabados.jpg" alt="Acabados" class="img-paleta" width="300">
+            <h3>Kit Acabados/Kit de trabajo para facilitar tu proceso de pintura</h3>
+            <p>$115.000</p>
+            <button onclick="agregarProducto('Kit Acabados',115.000)">
+            Agregar al carrito
+        </button>
+        </div>
+
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>¡Oferta de Temporada!</h3>
+            <p>Obtén un 25% de descuento en toda la gama de azules.</p>
+            <button id="btnCerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pinturas Pro - SENA Centro de Biotecnología Industrial</p>
+    </footer>
+
+    <script src="funcion.js"></script>
+</body>
+
+</html>
